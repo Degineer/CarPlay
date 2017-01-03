@@ -1,0 +1,56 @@
+<!-- Vertical Orientation is set  with weightSum-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:weightSum="5"
+android:orientation="vertical">
+
+<!-- Text Displayed At Top -->
+
+<ListView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/listView"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentTop="true" />
+
+<TextView
+    android:id="@+id/tvContents"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="고객님, 홍대점 방문을 환영합니다."
+    android:textSize="20dp"
+    android:layout_margin="20dp"
+    android:gravity="center_horizontal"
+    android:layout_below="@id/listView"
+    android:visibility="visible"/>
+<!-- Button Used -->
+
+<Button
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Button 1"
+    android:background="#009300"
+    android:layout_weight="1"/>
+
+<Button
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Button 2"
+    android:background="#e6cf00"
+    android:layout_weight="1"/>
+
+<Button
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Button 3"
+    android:background="#0472f9"
+    android:layout_weight="1"/>
+
+<Button
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Button 4"
+    android:background="#e100d5"
+    android:layout_weight="1"/>
+</LinearLayout>
